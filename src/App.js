@@ -53,12 +53,10 @@ function App() {
         <LikeButton />
       </div>
       <h1>Clickable Picture</h1>
-      <div className="ClickablePic">
-        <ClickablePicture
-          img="/img/persons/maxence.png"
-          imgClicked="/img/persons/maxence-glasses.png"
-        />
-      </div>
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
     </div>
   );
 }

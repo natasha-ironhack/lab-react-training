@@ -1,18 +1,45 @@
 import React, { Component } from 'react';
 
 class ClickablePicture extends Component {
-  //method to change it to next pic?
-  //   changePicture = () => {
-  //     console.log('Picture clicked!');
+  constructor(props) {
+    super(props);
+    this.state = {
+      clicked: false,
+    };
+  }
 
-  //add this.setState({})
+  switchPic = () => {
+    this.setState({
+      clicked: !this.state.clicked,
+    });
+  };
+
+  chooseImg = () => {
+    if (this.state.clicked) {
+      return this.props.imgClicked;
+    } else {
+      return this.props.img;
+    }
+  };
+
+  style = {
+    cursor: 'pointer',
+    width: '250px',
+    height: '300px',
+  };
 
   render() {
     return (
-      <div>
-        <img src="/img/persons/maxence.png" alt="displayImg" />
-      </div>
+      <span>
+        <img
+          src={this.chooseImg()}
+          style={this.style}
+          onClick={this.switchPic}
+          alt="ClickPic"
+        />
+      </span>
     );
   }
 }
+
 export default ClickablePicture;
