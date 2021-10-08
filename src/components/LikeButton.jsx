@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 
+const btnStyles = {
+  margin: '10px',
+  border: 'none',
+  color: 'white',
+};
 class LikeButton extends Component {
   //need to create a state
   constructor(props) {
@@ -26,11 +31,14 @@ class LikeButton extends Component {
 
   //render method
   render() {
-    //const { number } = this.state;
+    const { number } = this.state;
 
     return (
       <div>
-        <button onClick={() => this.addNumber('increase')}>
+        <button
+          style={{ ...btnStyles, background: number >= 1 ? 'blue' : 'purple' }}
+          onClick={() => this.addNumber('increase')}
+        >
           {this.state.number} Likes
         </button>
       </div>
