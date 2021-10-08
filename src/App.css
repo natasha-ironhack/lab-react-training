@@ -22,6 +22,10 @@ h1 {
   margin: 10px 50px 0px 10px;
 }
 
+.ClickablePic {
+  margin: 10px
+}
+
 .IdCard img {
   margin-right: 5px;
 }

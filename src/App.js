@@ -4,6 +4,7 @@ import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
@@ -50,6 +51,13 @@ function App() {
       <h1>LikeButton</h1>
       <div className="LikeButton Box">
         <LikeButton />
+      </div>
+      <h1>Clickable Picture</h1>
+      <div className="ClickablePic">
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
       </div>
     </div>
   );
