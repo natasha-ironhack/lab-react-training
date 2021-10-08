@@ -3,6 +3,7 @@ import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
@@ -45,6 +46,10 @@ function App() {
       </div>
       <div className="Random Box">
         <Random min={1} max={100} />
+      </div>
+      <h1>LikeButton</h1>
+      <div className="LikeButton Box">
+        <LikeButton />
       </div>
     </div>
   );
