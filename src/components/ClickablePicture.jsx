@@ -5,9 +5,11 @@ class ClickablePicture extends Component {
     super(props);
     this.state = {
       clicked: false,
+      //this shows the default state of the picture is the original image
+      //(i.e., the UNclicked img. So, it's FALSE that it's clicked)
     };
   }
-
+  //BUT...., if we want the img to be clicked...: => (this.state.clicked)
   chooseImg = () => {
     if (this.state.clicked) {
       return this.props.imgClicked;
@@ -25,6 +27,7 @@ class ClickablePicture extends Component {
   switchPic = () => {
     this.setState({
       clicked: !this.state.clicked,
+      //now it's true that the image has been clicked. Will show sunglasses
     });
   };
 
