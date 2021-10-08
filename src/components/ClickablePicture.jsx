@@ -41,5 +41,6 @@ class ClickablePicture extends Component {
     );
   }
 }
+//can't simply do img src="img/maxence.png". it's in different states. need methods
 
 export default ClickablePicture;
