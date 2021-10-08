@@ -54,8 +54,8 @@ function App() {
       </div>
       <h1>Clickable Picture</h1>
       <ClickablePicture
-        img="/img/persons/maxence.png"
-        imgClicked="/img/persons/maxence-glasses.png"
+        img="/img/catImg1.png"
+        imgClicked="/img/catImg2.png"
       />
     </div>
   );
