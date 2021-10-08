@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
+import Random from './components/Random';
 
 function App() {
   return (
@@ -32,10 +33,19 @@ function App() {
         </div>
       </div>
       <h1>Greetings</h1>
-      <div class="box">
-      <Greetings 
-        "Hallo" />
-        </div>
+      <div className="Greeting Box">
+        <Greetings lang="de">Ludwig</Greetings>
+      </div>
+      <div className="Greeting Box">
+        <Greetings lang="fr">François</Greetings>
+      </div>
+      <h1>Random</h1>
+      <div className="Random Box">
+        <Random min={1} max={6} />
+      </div>
+      <div className="Random Box">
+        <Random min={1} max={100} />
+      </div>
     </div>
   );
 }
