@@ -8,12 +8,6 @@ class ClickablePicture extends Component {
     };
   }
 
-  switchPic = () => {
-    this.setState({
-      clicked: !this.state.clicked,
-    });
-  };
-
   chooseImg = () => {
     if (this.state.clicked) {
       return this.props.imgClicked;
@@ -26,6 +20,12 @@ class ClickablePicture extends Component {
     cursor: 'pointer',
     width: '180px',
     height: '200px',
+  };
+
+  switchPic = () => {
+    this.setState({
+      clicked: !this.state.clicked,
+    });
   };
 
   render() {
