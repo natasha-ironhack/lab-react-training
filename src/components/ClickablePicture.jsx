@@ -24,8 +24,8 @@ class ClickablePicture extends Component {
 
   style = {
     cursor: 'pointer',
-    width: '250px',
-    height: '300px',
+    width: '180px',
+    height: '200px',
   };
 
   render() {
